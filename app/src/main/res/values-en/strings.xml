@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contact Form</string>
+    <string name="form_name">Complete name</string>
+    <string name="form_date">Born date</string>
+    <string name="form_phone">Phone</string>
+    <string name="form_email">Email</string>
+    <string name="form_description">Contact Description</string>
+
+    <string name="bt_next">Next</string>
+
+    <string name="title_confirm_info">Confirm Data</string>
+    <string name="bt_edit">Editar Datos</string>
+
+    <string name="resume_name"></string>
+    <string name="resume_date">Born Date: </string>
+    <string name="resume_phone">Phone. </string>
+    <string name="resume_email">Email: </string>
+    <string name="resume_description">Description: </string>
+
+</resources>

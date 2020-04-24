@@ -1,3 +1,27 @@
 <resources>
-    <string name="app_name">ContactForm</string>
+    <string name="app_name">Formulario contacto</string>
+
+    <string name="form_name">Nombre completo</string>
+    <string name="form_date">Fecha Nacimiento</string>
+    <string name="form_phone">Telefono</string>
+    <string name="form_email">Email</string>
+    <string name="form_description">Descripción contacto</string>
+
+    <string name="bt_next">Siguiente</string>
+
+    <string name="title_confirm_info">Confirmar Datos</string>
+    <string name="bt_edit">Editar Datos</string>
+
+    <string name="resume_name"></string>
+    <string name="resume_date">Fecha Nacimiento:</string>
+    <string name="resume_phone">Tel.</string>
+    <string name="resume_email">Email:</string>
+    <string name="resume_description">Descripción:</string>
+
+    <!--extras parameters-->
+    <string name="pform_name" translatable="false">name</string>
+    <string name="pform_date" translatable="false">date</string>
+    <string name="pform_phone" translatable="false">phone</string>
+    <string name="pform_email" translatable="false">email</string>
+    <string name="pform_description" translatable="false">description</string>
 </resources>
