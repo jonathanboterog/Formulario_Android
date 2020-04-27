@@ -18,4 +18,10 @@
     <string name="resume_email">Email: </string>
     <string name="resume_description">Description: </string>
 
+    <string name="mandatory_name">Please enter Name</string>
+    <string name="mandatory_date">Please enter Born Date</string>
+    <string name="mandatory_phone">Please enter Phone number</string>
+    <string name="mandatory_email">Please enter Email.</string>
+    <string name="mandatory_description">Please enter Description</string>
+
 </resources>

@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -61,6 +64,40 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(String.valueOf(R.string.pform_phone), phone);
         intent.putExtra(String.valueOf(R.string.pform_email), email);
         intent.putExtra(String.valueOf(R.string.pform_description), description);
+
+        //--- Check mandatory fields
+        //--- Name
+        if(name.length() == 0) {
+            Snackbar.make(view, getResources().getString(R.string.mandatory_name), Snackbar.LENGTH_SHORT)
+                    .setActionTextColor(getResources().getColor(R.color.colorPrimaryLight))
+                    .show();
+            edt_name.requestFocus();
+            return;
+        }
+        //--- Phone
+        if(phone.length() == 0) {
+            Snackbar.make(view, getResources().getString(R.string.mandatory_phone), Snackbar.LENGTH_SHORT)
+                    .setActionTextColor(getResources().getColor(R.color.colorPrimaryLight))
+                    .show();
+            edt_phone.requestFocus();
+            return;
+        }
+        //--- Email
+        if(email.length() == 0) {
+            Snackbar.make(view, getResources().getString(R.string.mandatory_email), Snackbar.LENGTH_SHORT)
+                    .setActionTextColor(getResources().getColor(R.color.colorPrimaryLight))
+                    .show();
+            edt_email.requestFocus();
+            return;
+        }
+        //--- Description
+        if(description.length() == 0) {
+            Snackbar.make(view, getResources().getString(R.string.mandatory_description), Snackbar.LENGTH_SHORT)
+                    .setActionTextColor(getResources().getColor(R.color.colorPrimaryLight))
+                    .show();
+            edt_description.requestFocus();
+            return;
+        }
 
         startActivity(intent);
     }

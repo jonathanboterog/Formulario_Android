@@ -18,6 +18,12 @@
     <string name="resume_email">Email:</string>
     <string name="resume_description">Descripción:</string>
 
+    <string name="mandatory_name">Por favor ingresar Nombre.</string>
+    <string name="mandatory_date">Por favor ingresar Fecha Nacimiento.</string>
+    <string name="mandatory_phone">Por favor ingresar campo telefono.</string>
+    <string name="mandatory_email">Por favor ingresar Email.</string>
+    <string name="mandatory_description">Por favor ingresar Descripción.</string>
+
     <!--extras parameters-->
     <string name="pform_name" translatable="false">name</string>
     <string name="pform_date" translatable="false">date</string>

@@ -2,12 +2,11 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background_gradient">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tv_title"
-        android:layout_margin="30dp"
+        android:layout_marginStart="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -18,9 +17,9 @@
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_height="40dp"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_below="@+id/tv_title"
         android:textSize="15sp"
         android:text="@string/resume_name"/>
@@ -28,9 +27,9 @@
     <TextView
         android:id="@+id/tv_date"
         android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_height="40dp"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_below="@+id/tv_name"
         android:textSize="15sp"
         android:text="@string/resume_date"/>
@@ -38,9 +37,9 @@
     <TextView
         android:id="@+id/tv_phone"
         android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_height="40dp"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_below="@+id/tv_date"
         android:textSize="15sp"
         android:text="@string/resume_phone"/>
@@ -48,9 +47,9 @@
     <TextView
         android:id="@+id/tv_email"
         android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
         android:layout_height="40dp"
-        android:gravity="left"
+        android:gravity="start"
         android:layout_below="@+id/tv_phone"
         android:textSize="15sp"
         android:text="@string/resume_email"/>
@@ -58,9 +57,9 @@
     <TextView
         android:id="@+id/tv_description"
         android:layout_width="match_parent"
-        android:layout_marginLeft="30dp"
-        android:layout_height="100dp"
-        android:gravity="left"
+        android:layout_marginStart="30dp"
+        android:layout_height="50dp"
+        android:gravity="start"
         android:layout_below="@+id/tv_email"
         android:textSize="15sp"
         android:text="@string/resume_description"/>
@@ -68,7 +67,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="30dp"
+        android:layout_margin="0dp"
         android:text="@string/bt_edit"
         android:gravity="center"
         android:layout_centerHorizontal="true"

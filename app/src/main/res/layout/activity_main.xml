@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/background_gradient">
+    tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -28,7 +27,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/edt_name"
-                    android:inputType="textPersonName"
+                    android:inputType="textPersonName|textNoSuggestions"
+                    android:importantForAutofill="no"
                     android:singleLine="true"
                     android:ems="10"
                     android:maxLength="50"
@@ -58,7 +58,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/edt_phone"
-                    android:inputType="text|phone"
+                    android:inputType="text|phone|textNoSuggestions"
+                    android:importantForAutofill="no"
                     android:singleLine="true"
                     android:ems="10"
                     android:hint="@string/form_phone"/>
@@ -74,7 +75,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/edt_email"
-                    android:inputType="textEmailAddress"
+                    android:inputType="textEmailAddress|textNoSuggestions"
+                    android:importantForAutofill="no"
                     android:singleLine="true"
                     android:ems="10"
                     android:hint="@string/form_email"/>
@@ -90,7 +92,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/edt_description"
-                    android:inputType="textMultiLine"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:importantForAutofill="no"
                     android:singleLine="false"
                     android:ems="10"
                     android:hint="@string/form_description"/>
