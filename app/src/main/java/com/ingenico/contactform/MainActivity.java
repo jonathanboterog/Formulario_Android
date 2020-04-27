@@ -4,24 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.android.material.snackbar.Snackbar;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
-
-    private String name;
-    private String date;
-    private String phone;
-    private String email;
-    private String description;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,33 +23,40 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void OnClickNext(View view) {
+
+        String name;
+        String date;
+        String phone;
+        String email;
+        String description;
+
         Intent intent = new Intent(this, ShowContact.class);
 
         //--- name
-        EditText edt_name = (EditText)findViewById(R.id.edt_name);
+        EditText edt_name = findViewById(R.id.edt_name);
         name = edt_name.getText().toString().trim();
 
         //--- Date
-        DatePicker pick_date = (DatePicker)findViewById(R.id.pick_date);
+        DatePicker pick_date = findViewById(R.id.pick_date);
         int   day  = pick_date.getDayOfMonth();
         int   month= pick_date.getMonth();
         int   year = pick_date.getYear();
         Calendar calendar = Calendar.getInstance();
         calendar.set(year, month, day);
 
-        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
         date = sdf.format(calendar.getTime());
 
         //--- phone
-        EditText edt_phone = (EditText)findViewById(R.id.edt_phone);
+        EditText edt_phone = findViewById(R.id.edt_phone);
         phone = edt_phone.getText().toString().trim();
 
         //--- email
-        EditText edt_email = (EditText)findViewById(R.id.edt_email);
+        EditText edt_email = findViewById(R.id.edt_email);
         email = edt_email.getText().toString().trim();
 
         //--- Description
-        EditText edt_description = (EditText)findViewById(R.id.edt_description);
+        EditText edt_description = findViewById(R.id.edt_description);
         description = edt_description.getText().toString().trim();
 
         intent.putExtra(String.valueOf(R.string.pform_name), name);

@@ -17,6 +17,8 @@
     <string name="resume_phone">Tel.</string>
     <string name="resume_email">Email:</string>
     <string name="resume_description">Descripción:</string>
+    <string name="resume_space">&#160;</string>
+
 
     <string name="mandatory_name">Por favor ingresar Nombre.</string>
     <string name="mandatory_date">Por favor ingresar Fecha Nacimiento.</string>

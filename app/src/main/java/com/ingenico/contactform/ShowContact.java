@@ -34,19 +34,19 @@ public class ShowContact extends AppCompatActivity {
 
         //--- Set Date
         TextView tv_date = findViewById(R.id.tv_date);
-        tv_date.setText(tv_date.getText() + " " +  date);
+        tv_date.setText(tv_date.getText() + getString(R.string.resume_space) +  date);
 
         //--- Set phone
         TextView tv_phone = findViewById(R.id.tv_phone);
-        tv_phone.setText(tv_phone.getText() + " " +  phone);
+        tv_phone.setText(tv_phone.getText() + getString(R.string.resume_space) +  phone);
 
         //--- Set Email
         TextView tv_email = findViewById(R.id.tv_email);
-        tv_email.setText(tv_email.getText() + " " +  email);
+        tv_email.setText(tv_email.getText() + getString(R.string.resume_space) +  email);
 
         //--- Set description
         TextView tv_description = findViewById(R.id.tv_description);
-        tv_description.setText(tv_description.getText() + " " + description);
+        tv_description.setText(tv_description.getText() + getString(R.string.resume_space) + description);
     }
 
     public void OnClickEdit(View view) {
