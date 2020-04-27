@@ -13,11 +13,10 @@
     <string name="bt_edit">Editar Datos</string>
 
     <string name="resume_name"></string>
-    <string name="resume_date">Fecha Nacimiento:</string>
-    <string name="resume_phone">Tel.</string>
-    <string name="resume_email">Email:</string>
-    <string name="resume_description">Descripción:</string>
-    <string name="resume_space">&#160;</string>
+    <string name="resume_date">Fecha Nacimiento: %1$s</string>
+    <string name="resume_phone">Tel. %1$s</string>
+    <string name="resume_email">Email: %1$s</string>
+    <string name="resume_description">Descripción: %1$s</string>
 
 
     <string name="mandatory_name">Por favor ingresar Nombre.</string>
